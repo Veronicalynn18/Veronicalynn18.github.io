@@ -3,36 +3,39 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="lib/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="main.css">
 
 
     <title></title>
   </head>
   <body ng-controller="myController">
-     <h1>hello!!!</h1>
+
      <div id="container">
        <div ng-repeat="pet in data.petfinder.pets.pet track by $index" class="new">
 
-            <div ng-repeat="image in pet.media.photos.photo track by $index" class="images">
+            <div ng-repeat="image in pet.media.photos.photo track by $index">
 
               <a ng-if="image['@size']==='pn'" class="image-link" href="{{image.$t}}"data-lightbox="esset" data-title="{{pet.name.$t}}">
                 <img class="image" src="{{image.$t}}"alt="" ></a>
 
             </div>
-
-          <div class="name">{{pet.name.$t}}</div>
-          <div class="aniaml">{{pet.animal.$t}}</div>
-          <div class="sex"> Sex:{{pet.sex.$t}}</div>
-          <div class="age">Age:{{pet.age.$t}}</div>
-          <div class="size">Size:{{pet.size.$t}}</div>
-          <dic class="about">About:{{pet.description.$t}}</div>
-
+                <div id="info">
+                  <div class="name">{{pet.name.$t}}</div>
+                  <br>
+                  <div class="aniaml">{{pet.animal.$t}}</div>
+                  <div class="sex"> Sex:{{pet.sex.$t}}</div>
+                  <div class="age">Age:{{pet.age.$t}}</div>
+                  <div class="size">Size:{{pet.size.$t}}</div>
+                  <br>
+                  <div class="about">About: {{pet.description.$t}}</div>
+                  <br>
+                </div>
 
        </div>
 
 
-
-
      </div>
+
      <script src="lib/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
      <script  src="lib/jquery.min.js"></script>
      <script  src="lib/angular/angular.min.js"></script>
