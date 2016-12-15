@@ -20,6 +20,15 @@ background-color: black ;
    text-decoration:none;
    font-size:2.5em;
  }
+ #title:hover {
+ -ms-transform:scale(1.1);
+ -webkit-transform:scale(1.1);
+ -o-transform:scale(1.1);
+ transform:scale(1.1);
+ color:#e1e3e8;
+ }
+
+
 
 .new{
    max-width: 60%;
@@ -51,6 +60,7 @@ background-color: black ;
   .hovereffect:hover .image {
   -ms-transform:scale(1.2);
   -webkit-transform:scale(1.2);
+  -o-transform:scale(1.2);
   transform:scale(1.2);
   opacity: 0.4;
   }
@@ -63,6 +73,7 @@ background-color: black ;
 .myButton {
 	-moz-box-shadow: 3px 4px 0px 0px #899599;
 	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+  -o-box-shadow: 3px 4px 0px 0px #899599;
 	box-shadow: 3px 4px 0px 0px #899599;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
 	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
@@ -74,6 +85,7 @@ background-color: black ;
 	background-color:#ededed;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
+  -o-border-radius:15px;
 	border-radius:15px;
 	border:1px solid #d6bcd6;
 	display:inline-block;
@@ -93,6 +105,10 @@ background-color: black ;
 	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
 	background-color:#bab1ba;
+  -ms-transform:scale(1.5);
+  -webkit-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  transform:scale(1.5);
 }
 .myButton:active {
 	position:relative;
