@@ -1,11 +1,21 @@
+
+    var app =angular.module("myModule", ["ngRoute"]);
+
+    app.config(function($routeProvider){
+
+        $routeProvider.when("/dogfinder",{
+          templateUrl: 'views/dogfinder.html',
+          controller: "myController"
+        });
+
+
+      });
+
   // careate a variable for petfinder json
-  var app= angular.module("myModule");
-  app.controller("myController",function($scope,$http){
+  app.controller("myController", function($scope,$http){
 
 
   var petfinderData;
-
-
 
 
   var url = 'https://api.petfinder.com/shelter.getPets?key=d7ca0694f95be8be22ee522ba0c3329b&id=MI995&output=full&format=json'
@@ -22,7 +32,7 @@
       console.log(data.petfinder.pets);
 
     }
+  });
 
 
-      });
-    });
+});
