@@ -7,18 +7,17 @@
            <div ng-repeat="image in pet.media.photos.photo track by $index" >
 
              <a ng-if="image['@size']==='pn'" class="image-link" href="{{image.$t}}"data-lightbox="esset" data-title="{{pet.name.$t}}">
-              <div class="hovereffect">
-                <img class="image" src="{{image.$t}}"alt=""></a>              
-                </div>
+
+                <img  class="image" ng-src="{{image.$t}}"alt=""></a>
+
               </div>
 
            <div id="info">
                <div class="name"><h1>{{pet.name.$t}}</h1>
                  <a href="https://www.iheartdogs.org/adoption-process/"class="myButton">Adopt Me!!</a>
                </div>
-
                <br>
-               <div class="aniaml">{{pet.animal.$t}}</div>
+               <div class="animal">{{pet.animal.$t}}</div>
                <div class="sex"> Sex:{{pet.sex.$t}}</div>
                <div class="age">Age:{{pet.age.$t}}</div>
                <div class="size">Size:{{pet.size.$t}}</div>
@@ -30,4 +29,4 @@
       </div>
 
 
-</div>
+  </div>

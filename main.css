@@ -14,18 +14,26 @@ background-color: black ;
    display: block;
    text-align: center;
    margin: auto;
-   height: 10%;
+   height: 40%;
    width: 90%;
    color: white;
-   text-decoration:none;
-   font-size:2.5em;
+   font-size:3.5em;
  }
- #title:hover {
- -ms-transform:scale(1.1);
- -webkit-transform:scale(1.1);
- -o-transform:scale(1.1);
- transform:scale(1.1);
- color:#e1e3e8;
+.paw{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10%;
+	width: 10%;
+	opacity: .3;
+}
+ .paw:hover {
+  -ms-transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1);
+  color:#e1e3e8;
+	opacity: 1;
  }
 
 
@@ -48,19 +56,19 @@ background-color: black ;
   text-align: center;
 
 }
-.image{
+img.image {
   float: left;
   margin: 6%;
   display: inline-block;
   height:20%;
   width: 20%;
   border-radius: 10%;
-  opacity: 1;
+
 }
-  .hovereffect:hover .image {
+  .image:hover {
   -ms-transform:scale(1.2);
   -webkit-transform:scale(1.2);
-  -o-transform:scale(1.2);
+
   transform:scale(1.2);
   opacity: 0.4;
   }
